@@ -1,11 +1,11 @@
 with customers as (
 
-    select * FROM {{ ref('stg_jaffle_shop__customers') }}--> analytics.dbt_kamina.stg_jaffle_shop__customers
+    select * FROM {{ ref('stg_jaffle_shop__customers') }} --> analytics.dbt_kamina.stg_jaffle_shop__customers
 ),
 
 orders as (
 
-    select * FROM {{ ref('stg_jaffle_shop__orders') }} --> analytics.dbt_kamina.stg_jaffle_shop__orders
+    select * FROM {{ ref('stg_jaffle_shop__orders') }}   --> analytics.dbt_kamina.stg_jaffle_shop__orders
 
 ),
 
